@@ -1,0 +1,25 @@
+{
+  "name": "mu-jquery-widget-selectize",
+  "authors": [
+    "Mikael Karon <mikael@karon.se>"
+  ],
+  "description": "mu-jquery-widget Selectize widget",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/mu-lib/mu-jquery-widget-selectize#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "mu-jquery-widget": "^14.0.0",
+    "selectize": "^0.12.4"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "mu-jquery-app": "^17.0.2"
+  }
+}
