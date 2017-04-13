@@ -2,10 +2,8 @@
   var root = this;
   if (typeof define === "function" && define.amd) {
     define(modules, factory);
-  } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.apply(root, modules.map(require));
   } else {
-    root["mu-jquery-widget-selectize/examples/app"] = factory.apply(root, modules.map(function (m) {
+    factory.apply(root, modules.map(typeof module === "object" && module.exports ? require : function (m) {
       return this[m] || root[m.replace(/^\.{2}/, "mu-jquery-widget-selectize")];
     }, {
         "jquery": root.jQuery
