@@ -4,7 +4,7 @@
     define(modules, factory);
   } else {
     factory.apply(root, modules.map(typeof module === "object" && module.exports ? require : function (m) {
-      return this[m] || root[m.replace(/^\.{2}/, "mu-jquery-widget-selectize")];
+      return this[m] || root[m];
     }, {
         "jquery": root.jQuery
       }));
