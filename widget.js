@@ -20,7 +20,7 @@
       ["initialize", "change", "focus", "blur", "item_add", "item_remove", "clear", "option_add", "option_remove", "option_clear", "optgroup_add", "optgroup_remove", "optgroup_clear", "dropdown_open", "dropdown_close", "type", "load", "destroy"].forEach(function (event) {
         selectize.on(event, function () {
           $element.trigger("selectize/" + event, arguments);
-        })
+        });
       });
     }
   });
