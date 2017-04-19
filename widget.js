@@ -9,11 +9,13 @@
       return root[m];
     }));
   }
-})(["mu-jquery-widget/widget", "selectize"], function (widget) {
+})(["mu-jquery-widget/widget"], function (widget) {
   return widget.extend({
     "on/initialize": function () {
       var $element = this.$element;
-      var selectize = $element.selectize().data("selectize");
+      var selectize = $element
+        .selectize($element.data("muJqueryWidgetSelectize"))
+        .data("selectize");
 
       ["initialize", "change", "focus", "blur", "item_add", "item_remove", "clear", "option_add", "option_remove", "option_clear", "optgroup_add", "optgroup_remove", "optgroup_clear", "dropdown_open", "dropdown_close", "type", "load", "destroy"].forEach(function (event) {
         selectize.on(event, function () {
