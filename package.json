@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/mu-lib/mu-jquery-widget-selectize#readme",
   "dependencies": {
-    "mu-jquery-widget": "^14.0.0",
+    "mu-jquery-widget": "^14.0.0"
+  },
+  "peerDependencies": {
     "selectize": "^0.12.4"
   },
   "devDependencies": {

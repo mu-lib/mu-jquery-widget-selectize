@@ -6,10 +6,8 @@
     module.exports = factory.apply(root, modules.map(require));
   } else {
     root["mu-jquery-widget-selectize/widget"] = factory.apply(root, modules.map(function (m) {
-      return this[m] || root[m.replace(/^\./, "mu-jquery-widget-selectize")];
-    }, {
-        "selectize": root.Selectize
-      }));
+      return root[m];
+    }));
   }
 })(["mu-jquery-widget/widget", "selectize"], function (widget) {
   return widget.extend({
