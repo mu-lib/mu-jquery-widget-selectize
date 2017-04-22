@@ -12,7 +12,9 @@
 })(["mu-jquery-widget/widget"], function (widget) {
   return widget.extend({
     "on/initialize": function () {
-      var $element = this.$element;
+      var me = this;
+      var $ = me.$;
+      var $element = me.$element;
       var selectize = $element
         .selectize($element.data("muJqueryWidgetSelectize"))
         .data("selectize");
@@ -21,6 +23,10 @@
         selectize.on(event, function () {
           $element.trigger("selectize/" + event, arguments);
         });
+      });
+
+      ["addOption", "updateOption", "removeOption", "clearOptions", "getOption", "getAdjacentOption", "refreshOptions", "clear", "getItem", "addItem", "removeItem", "createItem", "refreshItems", "addOptionGroup", "removeOptionGroup", "clearOptionGroups", "open", "close", "positionDropdown", "destroy", "load", "focus", "blur", "lock", "unlock", "disable", "enable", "getVallue", "setValue", "setCaret", "isFull", "clearCache", "updatePlaceholder", "setTextboxValue"].forEach(function (method) {
+        me[method] = $.proxy(selectize[method], selectize);
       });
     }
   });
