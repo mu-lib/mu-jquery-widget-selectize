@@ -16,6 +16,7 @@
         "text": "John Doe",
         "value": "6"
       });
+      this.on$selectize("change", console.log.bind(console));
     }
   });
 });
