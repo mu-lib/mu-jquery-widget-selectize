@@ -25,7 +25,7 @@
         });
       });
 
-      ["addOption", "updateOption", "removeOption", "clearOptions", "getOption", "getAdjacentOption", "refreshOptions", "clear", "getItem", "addItem", "removeItem", "createItem", "refreshItems", "addOptionGroup", "removeOptionGroup", "clearOptionGroups", "on", "off", "trigger", "open", "close", "positionDropdown", "destroy", "load", "focus", "blur", "lock", "unlock", "disable", "enable", "getVallue", "setValue", "setCaret", "isFull", "clearCache", "updatePlaceholder", "setTextboxValue"].forEach(function (method) {
+      ["addOption", "updateOption", "removeOption", "clearOptions", "getOption", "getAdjacentOption", "refreshOptions", "clear", "getItem", "addItem", "removeItem", "createItem", "refreshItems", "addOptionGroup", "removeOptionGroup", "clearOptionGroups", "on", "off", "trigger", "open", "close", "positionDropdown", "destroy", "load", "focus", "blur", "lock", "unlock", "disable", "enable", "getValue", "setValue", "setCaret", "isFull", "clearCache", "updatePlaceholder", "setTextboxValue"].forEach(function (method) {
         me[me[method] ? method + "$selectize" : method] = $.proxy(selectize[method], selectize);
       });
     }
