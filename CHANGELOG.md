@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/mu-lib/mu-jquery-widget-selectize/compare/v0.2.0...v0.3.0) (2017-04-22)
+
+
+### Features
+
+* use alternative name for method overides ([81c56fd](https://github.com/mu-lib/mu-jquery-widget-selectize/commit/81c56fd))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/mu-lib/mu-jquery-widget-selectize/compare/v0.1.1...v0.2.0) (2017-04-22)
 
