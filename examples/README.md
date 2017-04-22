@@ -1,4 +1,4 @@
 # Examples
 
 - [basic](basic) : Basic example.
-- [methods](methods) : Methods example.
+- [method](method) : Methods example.
