@@ -5,11 +5,11 @@
   } else if (typeof module === "object" && module.exports) {
     module.exports = factory.apply(root, modules.map(require));
   } else {
-    root["mu-jquery-widget-selectize/examples/basic"] = factory.apply(root, modules.map(function (m) {
-      return this[m] || root[m.replace(/^\.{2}/, "mu-jquery-widget-selectize")];
+    root["basic-example/widget"] = factory.apply(root, modules.map(function (m) {
+      return root[m];
     }));
   }
-})(["../widget"], function (widget) {
+})(["mu-jquery-widget-selectize/widget"], function (widget) {
   return widget.extend({
     "on/change": function() {
       var $element = this.$element;

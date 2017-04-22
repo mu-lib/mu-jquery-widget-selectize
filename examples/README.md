@@ -1,3 +1,4 @@
 # Examples
 
-- [basic](basic.html) : Basic example.
+- [basic](basic) : Basic example.
+- [methods](methods) : Methods example.
