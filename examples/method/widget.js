@@ -1,17 +1,14 @@
-(function (modules, factory) {
-  var root = this;
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define(modules, factory);
+    define(["mu-jquery-widget-selectize/widget"], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.apply(root, modules.map(require));
+    module.exports = factory(require("mu-jquery-widget-selectize/widget"));
   } else {
-    root["method-example/widget"] = factory.apply(root, modules.map(function (m) {
-      return root[m];
-    }));
+    root["method-example/widget"] = factory(root["mu-jquery-widget-selectize/widget"]);
   }
-})(["mu-jquery-widget-selectize/widget"], function (widget) {
+})(this, function (widget) {
   return widget.extend({
-    "on/initialize": function() {
+    "on/initialize": function () {
       this.addOption({
         "text": "John Doe",
         "value": "6"

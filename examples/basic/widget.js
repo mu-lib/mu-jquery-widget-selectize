@@ -1,17 +1,14 @@
-(function (modules, factory) {
-  var root = this;
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define(modules, factory);
+    define(["mu-jquery-widget-selectize/widget"], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.apply(root, modules.map(require));
+    module.exports = factory(require("mu-jquery-widget-selectize/widget"));
   } else {
-    root["basic-example/widget"] = factory.apply(root, modules.map(function (m) {
-      return root[m];
-    }));
+    root["basic-example/widget"] = factory(root["mu-jquery-widget-selectize/widget"]);
   }
-})(["mu-jquery-widget-selectize/widget"], function (widget) {
+})(this, function (widget) {
   return widget.extend({
-    "on/change": function() {
+    "on/change": function () {
       var $element = this.$element;
       console.log("changed", $element.text(), $element.val());
     },
