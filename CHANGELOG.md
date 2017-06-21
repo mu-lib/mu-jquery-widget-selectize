@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/mu-lib/mu-jquery-widget-selectize/compare/v0.3.2...v0.3.3) (2017-06-21)
+
+
+### Bug Fixes
+
+* bump deps ([7c9dcb0](https://github.com/mu-lib/mu-jquery-widget-selectize/commit/7c9dcb0))
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/mu-lib/mu-jquery-widget-selectize/compare/v0.3.1...v0.3.2) (2017-06-16)
 
